@@ -1,0 +1,77 @@
+#pylenstool modification 20170713214227
+#Fri Dec  2 23:06:37 2016
+#Image plane optimization
+#Chi2tot(dof=3): 255.2077
+#Chi2pos: 255.207671
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formex: 0.000000
+#Chi2formey: 0.000000
+#Chi2l: 0.000000
+#log(Evidence) : -182.148982
+#n_Warning: 0
+runmode
+	reference	3 181.550606 -8.800926 
+	end	
+cleanlens
+    cleanset  1 1.036
+    ncont 1 clean.fits
+    s_n     1200
+    echant   10
+    s_echant  10
+    c_image center_centre.dwcs
+    contour 1 centre.dwcs
+    0imframe 3 ../../HST/snake_F160W.fits
+    0sframe SP_snake_F160W_centre.fits
+    0imframe 3 ../../HST/snake_F435W.fits  
+    0sframe SP_snake_F435W_centre.fits
+    0imframe 3 ../../HST/snake_F814W.fits  
+    0sframe SP_snake_F814W_centre.fits
+    imframe 3 beams.fits 
+    sframe SP_beam_centre.fits
+	end	
+grille
+	nombre	128 
+	polaire	0 
+	nlentille	1 
+	end	
+potentiel O1
+	profil       17
+        gamma1map 3 gamma1-norm.fits
+        gamma2map 3 gamma2-norm.fits
+        kappamap  3 MACS1206_kappa.fits
+        dplxmap  3 newsimple_dplx_norm_shift.fits
+        dplymap  3 newsimple_dply_norm_shift.fits
+        potenmap  3 poten-norm.fits
+	z_lens     0.4385
+	end
+cline
+	nplan	0 1.036 
+	dmax	100.000000 
+	algorithm	MARCHINGSQUARES 
+	limitHigh	0.2 
+	limitLow	0.05 
+	end	
+grande
+	iso	0 0 1.000000 0.000000 0.000000 
+	name	best 
+	profil	0 0 
+	contour	0 0 
+	large_dist	2.000000 
+	end	
+cosmologie
+	model	1 
+	H0	70.000000 
+	omegaM	0.300000 
+	omegaX	0.700000 
+	omegaK	0. 
+	wX	-1.000000 
+	wa	0.000000 
+	end	
+champ
+    xmin      0.000000
+    xmax      50.000000
+    ymin     -10.000000
+    ymax      40.000000
+	end	
+fini

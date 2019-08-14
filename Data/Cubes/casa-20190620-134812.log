@@ -1,0 +1,9 @@
+2019-06-20 13:48:18	INFO	::casa	
+2019-06-20 13:48:18	INFO	::casa	CASA Version 5.1.1-5  
+2019-06-20 13:48:27	INFO	viewer::::	
+2019-06-20 13:48:27	INFO	viewer::::+	##########################################
+2019-06-20 13:48:27	INFO	viewer::::+	##### Begin Task: viewer             #####
+2019-06-20 13:48:27	INFO	viewer::::	viewer(infile="",displaytype="raster",channel=0,zoom=1,outfile="",
+2019-06-20 13:48:27	INFO	viewer::::+	        outscale=1.0,outdpi=300,outformat="jpg",outlandscape=False,gui=True)
+2019-06-20 13:48:28	INFO	viewer::::	##### End Task: viewer               #####
+2019-06-20 13:48:28	INFO	viewer::::+	##########################################
